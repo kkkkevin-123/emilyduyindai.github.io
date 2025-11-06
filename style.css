@@ -111,13 +111,9 @@ body {
   filter: brightness(70%);
   clip-path: ellipse(100% 75% at 50% 40%);
   z-index: 1; /* ✅ 背景层级最低 */
+  
 }
 .hero-text {
-  position: absolute;
-  bottom: 160px;
-  left: 80px;
-  color: white;
-  text-shadow: 0 3px 10px rgba(0,0,0,0.5);
   z-index: 2; /* ✅ 文字浮在图片上方 */
 }
 /* ====== Hero Quote Section ====== */
@@ -139,7 +135,7 @@ body {
 .hero-text {
   position: absolute;
   bottom: 160px; /* ✅ 原来可能是 60px，现在往上提 */
-  left: 80px;
+  left: 120px;
   color: white;
   text-shadow: 0 3px 10px rgba(0,0,0,0.5);
 }
@@ -161,6 +157,10 @@ body {
 .content-section {
   padding: 80px 100px;
   background: #f8f9fb;
+  max-width: 1100px;
+  margin: 0 auto 100px;
+  padding: 0 60px;
+
 }
 
 .content-section h2 {
@@ -170,7 +170,7 @@ body {
 }
 
 .content-section p {
-  max-width: 800px;
+  max-width: 1024px;
   margin-bottom: 40px;
   color: #333;
   font-size: 1.05em;
@@ -278,4 +278,53 @@ body {
   font-size: 1em;
   color: #444;
   font-weight: 500;
+}
+
+  /* 圆角边框样式类 */
+  .text-round-border {
+      /* 1. 边框基础设置：宽度 + 样式 + 颜色 */
+      border: 1px solid #d3d6d5;
+      border-radius: 16px; /* 16px 圆角（适合短文本） */
+      padding: 2px 12px; /* 上下 4px，左右 12px */
+      /* 可选：文字样式优化 */
+      font-size: 16px;
+      color: #333;
+      text-decoration: none; /* 去掉下划线（如果是链接） */
+      white-space: nowrap;
+  }
+
+  .custom-list {
+            margin: 20px 0; /* 上下外间距 20px，左右 0（可调整） */
+            margin-left: 10px; /* 左侧外间距（与其他内容错开，可选） */
+            
+            /* 列表内间距：控制列表项与左侧圆点的距离 */
+            padding-left: 25px; /* 增大左侧内间距，让文字不紧贴圆点 */
+        }
+
+        /* 列表项样式：控制每个 li 的上下间距 */
+        .custom-list li {
+            margin-bottom: 12px; /* 每个列表项下方间距 12px，避免拥挤 */
+            line-height: 1.5; /* 行高优化，长文本更易读 */
+            font-weight: bold; 
+            ;
+        }
+  .skill-list {
+    line-height: 2.0;
+          }
+
+
+
+/* ====== Gallery Section ====== */
+.gallery-section-large {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 30px;
+  max-width: 1400px;
+  margin: 0 auto 100px;
+  padding: 0 60px;
+}
+
+.white-link{
+  color: white;
+  text-decoration: none;
 }
