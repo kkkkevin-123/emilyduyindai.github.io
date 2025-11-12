@@ -31,7 +31,7 @@ const menuData = [
             { text: "Uncovering Immune Evasion Mechanisms in Breast Cancer Cells", link: "research-2.html" },
             { text: "Sustainable Bioconversion of Paper Waste Using Synthetic Biology (iGEM HS-Alpha)", link: "research-3.html" },
             { text: "Exploring the Relationship Between Carbon Dioxide Emissions and Malaria in Africa", link: "research-4.html" },
-            { text: "Developing MP6-UTT to Accelerate Microbial Adaptation", link: "research-5.html" }
+            { text: "Developing MP6-UTT to Accelerate Microbial Adaptation(iDEC PIM-VAC)", link: "research-5.html" }
         ]
     },
     {

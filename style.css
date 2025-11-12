@@ -67,7 +67,7 @@ body {
   min-width: 220px;
   padding: 10px 0;
   box-shadow: 0 4px 14px rgba(0,0,0,0.15);
-  z-index: 200;
+  z-index: 1000;
   list-style: none;
 }
 
@@ -97,7 +97,7 @@ body {
 .hero-header {
   position: relative;
   width: 100%;
-  height: 550px;
+  height: 400px;
   overflow: hidden;
 }
 
